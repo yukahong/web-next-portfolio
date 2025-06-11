@@ -18,6 +18,7 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#d7c3f1",
+        secondary: '#bb91f2',
         warning: "#f5f1d5",
       },
       textColor: {
