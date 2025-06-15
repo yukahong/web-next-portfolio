@@ -2,13 +2,15 @@
 
 import { motion } from "motion/react";
 import Image from "next/image";
-import Button from "@/components/Button/Button";
+import Link from "@/components/Link/Link";
+import { LuLinkedin } from "react-icons/lu";
+import { LuGithub } from "react-icons/lu";
+import React from "react";
 
 export const Introduction = () => {
   return (
     <section className="flex flex-col gap-5 justify-center items-center px-5 w-[92rem] md:w-[58rem] sm:w-[20rem]">
-      <motion.div
-      >
+      <motion.div>
         <Image
           src="/profile.jpg"
           width={200}
@@ -19,9 +21,7 @@ export const Introduction = () => {
           className="h-24 w-24 rounded-full border-solid border-4 border-white shadow-md shadow-gray-300"
         />
       </motion.div>
-      <motion.div
-        className="flex flex-col gap-3 items-center"
-      >
+      <motion.div className="flex flex-col gap-3 items-center">
         <div className="text-3xl text-body font-medium">
           哈囉～！我是 Yuka！
         </div>
@@ -30,8 +30,22 @@ export const Introduction = () => {
           React，持續精進自我以利提供兼具美觀與效能之產品服務，熱愛學習及挑戰新的事物，具有良好自學能力。
         </div>
       </motion.div>
-      <motion.div>
-        <Button text={"text"} />
+      <motion.div className="flex gap-2">
+        <Link text={"Contact"} url={"#contact"} style={"base"} />
+        <Link
+          text={""}
+          url={"/"}
+          style={"secondary"}
+          icon={React.createElement(LuLinkedin)}
+          isCircle={true}
+        />
+        <Link
+          text={""}
+          url={"/"}
+          style={"secondary"}
+          icon={React.createElement(LuGithub)}
+          isCircle={true}
+        />
       </motion.div>
     </section>
   );

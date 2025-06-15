@@ -20,6 +20,8 @@ const config: Config = {
         primary: "#d7c3f1",
         secondary: '#bb91f2',
         warning: "#f5f1d5",
+        body: "#59495d",
+        textPrimary: '#312833',
       },
       textColor: {
         primary: "#312833",
@@ -27,6 +29,7 @@ const config: Config = {
         success: "#577051",
         info: "#4981cf",
         body: "#59495d",
+        bgPrimary: "#d7c3f1",
         // light: "#ffffff",
         // dark: "#312833",
       },
