@@ -19,7 +19,7 @@ const Project = (props: ProjectProps) => {
         <span className="text-base text-body">{description}</span>
         <div className="flex flex-wrap gap-2">
           {tags.map((tag, index) => (
-            <Chip key={`tag-${index}`} text={tag} />
+            <Chip key={`tag-${index}`} text={tag} size={"small"} />
           ))}
         </div>
       </div>
