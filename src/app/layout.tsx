@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSansTC.className} antialiased text-primary bg-gray-50 sm:text-xs md:text-base
+        className={`${notoSansTC.className} antialiased py-28 sm:pt-36 text-primary bg-gray-50 sm:text-xs md:text-base
         `}
       >
         <div className="absolute -z-10 top-[-6rem] right-[10rem] w-[30rem] h-[30rem] bg-warning rounded-full blur-[10rem] sm:w-[68rem]"></div>
