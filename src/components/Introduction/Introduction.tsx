@@ -9,7 +9,10 @@ import React from "react";
 
 export const Introduction = () => {
   return (
-    <section className="flex flex-col gap-5 justify-center items-center px-5 w-[92rem] md:w-[58rem] sm:w-[20rem]">
+    <section
+      id={"home"}
+      className="flex flex-col gap-5 justify-center items-center px-5 w-[92rem] md:w-[58rem] sm:w-[20rem]"
+    >
       <motion.div>
         <Image
           src="/profile.jpg"

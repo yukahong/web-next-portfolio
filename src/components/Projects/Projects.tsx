@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { projectsData } from "@/lib/data";
 import Chip from "@/components/Chip/Chip";
+import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
 type ProjectProps = {
   title: string;
@@ -38,8 +39,11 @@ const Project = (props: ProjectProps) => {
 
 export const Projects = () => {
   return (
-    <section className="flex flex-col gap-5 items-center w-[92rem] md:w-[58rem] sm:w-[20rem]">
-      <h2 className="px-4 text-primary font-semibold text-3xl">Projects</h2>
+    <section
+      id={"projects"}
+      className="flex flex-col gap-5 items-center w-[92rem] md:w-[58rem] sm:w-[20rem]"
+    >
+      <SectionHeader text={"Projects"}></SectionHeader>
       <div className="grid grid-cols-2 gap-4">
         {projectsData.map((project, index) => (
           <Project key={`project-${index}`} {...project} />

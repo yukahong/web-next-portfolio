@@ -3,6 +3,7 @@ import Introduction from "@/components/Introduction/Introduction";
 import About from "@/components/About/About";
 import Projects from "@/components/Projects/Projects";
 import Skills from "@/components/Skills/Skills";
+import Experience from "@/components/Experience/Experience";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Divider />
       <Skills />
       <Divider />
+      <Experience />
     </main>
   );
 }

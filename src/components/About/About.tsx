@@ -1,9 +1,9 @@
+import SectionHeader from "@/components/SectionHeader/SectionHeader";
+
 export const About = () => {
   return (
-    <section className="w-full flex flex-col items-center gap-5">
-      <h2 className="px-4 text-primary font-semibold text-3xl">
-        About Me
-      </h2>
+    <section id={"about"} className="w-full flex flex-col items-center gap-5">
+      <SectionHeader text={"About Me"}></SectionHeader>
       <div className="flex flex-col gap-4 text-body text-base w-[92rem] md:w-[58rem] sm:w-[20rem]">
         <span>
           起初接觸程式語言是從大學開始，透過課程學習了各種不同的程式語言，也激發了我對於開發的興趣，在校期間也修習了
