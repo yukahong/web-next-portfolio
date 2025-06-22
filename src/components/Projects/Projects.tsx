@@ -14,11 +14,11 @@ type ProjectProps = {
 const Project = (props: ProjectProps) => {
   const { title, description, tags, imageUrl, company } = props;
   return (
-    <section className="flex gap-2 border-solid border-primary border-[1px] p-3 rounded-xl shadow-md">
-      <div className="flex flex-col flex-1 gap-2">
+    <section className="group relative flex gap-4 min-h-64 border-solid border-primary border-[1px] px-10 py-8 rounded-xl shadow-md overflow-hidden transition">
+      <div className="flex flex-col flex-grow-2 gap-2 h-full sm:max-w-[50%]">
         <h3 className="text-2xl text-primary font-medium">{title}</h3>
         <span className="text-base text-body">{description}</span>
-        <div className="flex flex-wrap gap-2">
+        <div className="flex flex-wrap gap-2 justify-self-end">
           {tags.map((tag, index) => (
             <Chip key={`tag-${index}`} text={tag} size={"small"} />
           ))}
@@ -30,8 +30,13 @@ const Project = (props: ProjectProps) => {
         height={200}
         quality={95}
         property="true"
-        alt={`project image of ${company}`}
-        className={"flex-1"}
+        alt={`image of ${title} project in ${company}`}
+        className={`absolute hidden sm:block top-10 -right-7 w-[28rem] rounded-t-lg shadow-xl
+        transition 
+        group-hover:scale-[1.04]
+        group-hover:-translate-x-3
+        group-hover:translate-y-3
+        group-hover:-rotate-2`}
       />
     </section>
   );
@@ -41,10 +46,10 @@ export const Projects = () => {
   return (
     <section
       id={"projects"}
-      className="flex flex-col gap-5 items-center w-[92rem] md:w-[58rem] sm:w-[20rem]"
+      className="flex flex-col gap-8 items-center w-[92rem] md:w-[58rem] sm:w-[20rem]"
     >
       <SectionHeader text={"Projects"}></SectionHeader>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="flex flex-col gap-6">
         {projectsData.map((project, index) => (
           <Project key={`project-${index}`} {...project} />
         ))}

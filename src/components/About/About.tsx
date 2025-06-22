@@ -2,7 +2,7 @@ import SectionHeader from "@/components/SectionHeader/SectionHeader";
 
 export const About = () => {
   return (
-    <section id={"about"} className="w-full flex flex-col items-center gap-5">
+    <section id={"about"} className="w-full flex flex-col items-center gap-8">
       <SectionHeader text={"About Me"}></SectionHeader>
       <div className="flex flex-col gap-4 text-body text-base w-[92rem] md:w-[58rem] sm:w-[20rem]">
         <span>

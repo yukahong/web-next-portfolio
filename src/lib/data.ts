@@ -74,13 +74,13 @@ export const projectsData = [
       "i18n",
       "Webpack",
     ],
-    // imageUrl: cashubImg,
+    imageUrl: "/cashubImg.png",
     company: "Castles",
   },
   {
     title: "Trendee",
     description:
-      "整合原本分離 IP 之電商業務，建立統一電子商城，從消費者端電商瀏覽、促銷至購物車及訂單管理完整之消費流程功能，並於發布上線後，持續維運、追蹤客戶使用情況，優化用戶使用者體驗，",
+      "整合原本分離 IP 之電商業務，建立統一電子商城，從消費者端電商瀏覽、促銷至購物車及訂單管理完整之消費流程功能，並於發布上線後，持續維運、追蹤客戶使用情況，優化用戶使用者體驗。",
     tags: [
       "React",
       "JavaScript",
@@ -92,15 +92,15 @@ export const projectsData = [
       "Node.js",
       "Google Analytics",
     ],
-    // imageUrl: trendeeImg,
+    imageUrl: "/trendeeImg.png",
     company: "TVBS",
   },
   {
     title: "健康2.0 AI-bot 網頁版",
     description:
-      "此為健康2.0 IP 新功能之測試市場版本，與關係企業 DeepQ 協作，建立靜態網站版本供公司進行市場調查，實測 1-2 個月後得到正面回饋，由該團隊接手並實裝於健康2.0 App",
+      "此為健康2.0 IP 新功能之測試市場版本，與關係企業 DeepQ 協作，建立靜態網站版本供公司進行市場調查，實測 1-2 個月後得到正面回饋，由該團隊接手並實裝於健康2.0 App。",
     tags: ["React", "Next.js", "JavaScript", "AWS S3", "Tailwind"],
-    // imageUrl: null,
+    imageUrl: "/tvbs_health_ai_bot.jpg",
     company: "TVBS",
   },
   {
@@ -108,24 +108,26 @@ export const projectsData = [
     description:
       "開發 TVBS 公司使用之內部表單系統，可於管理介面執行新增、編輯、刪除等 App 內推播排程。",
     tags: ["React", "Next.js", "TypeScript", "Shadcn", "Tailwind", "NextAuth"],
-    // imageUrl: null,
+    imageUrl: "/tvbs_sport_app.jpg",
     company: "TVBS",
   },
   {
-    title: "大運動+ App 棒球12強活動",
-    description: "以台灣棒球知識為主題之互動式小遊戲活動頁面。",
-    tags: ["React", "Next.js", "JavaScript", "Tailwind", "AWS S3"],
-    // imageUrl: null,
-    company: "TVBS",
-  },
-  {
-    title: "Persona AI 客群探索系統",
+    title: "大運動+ App 棒球12強問答小遊戲活動",
     description:
-      "TVBS 公司內部使用，與 AI Team 協作，提供 Prompt 協助指引 AI 整理 TVBS 所提供之業務及資源，以利公司內部業務人員探索商業合作配套之可能性。",
-    tags: ["React", "Next.js", "TypeScript", "Shadcn", "Tailwind"],
-    // imageUrl: null,
+      "在短短一周內，建立以台灣棒球知識為主題之互動式問答小遊戲活動頁面，並於世界12強賽事前上線，並於賽事期間提供用戶遊玩體驗、收集專屬球員圖卡。",
+    tags: ["React", "Next.js", "JavaScript", "Tailwind", "AWS S3"],
+    imageUrl: "/tvbs_sport.jpg",
+
     company: "TVBS",
   },
+  // {
+  //   title: "Persona AI 客群探索系統",
+  //   description:
+  //     "TVBS 公司內部使用，與 AI Team 協作，提供 Prompt 協助指引 AI 整理 TVBS 所提供之業務及資源，以利公司內部業務人員探索商業合作配套之可能性。",
+  //   tags: ["React", "Next.js", "TypeScript", "Shadcn", "Tailwind"],
+  //   imageUrl: null,
+  //   company: "TVBS",
+  // },
 ] as const;
 
 export const skillsData = [
@@ -143,4 +145,5 @@ export const skillsData = [
   "Apollo",
   "Magento PWA",
   "Shadcn",
+  "Google Analytics",
 ] as const;
