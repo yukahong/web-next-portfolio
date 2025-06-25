@@ -13,7 +13,7 @@ export const Introduction = () => {
   return (
     <section
       id={"home"}
-      className="flex flex-col gap-5 justify-center items-center px-5 w-[92rem] md:w-[58rem] sm:w-[20rem]"
+      className="flex flex-col gap-5 justify-center items-center sm:w-full md:w-[40rem] lg:w-[58rem] xl:w-[64rem] 2xl:w-[80rem]"
     >
       <motion.div>
         <Image

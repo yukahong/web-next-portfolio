@@ -13,15 +13,16 @@ const config: Config = {
         md: "768px",
         lg: "976px",
         xl: "1440px",
+        "2xl": "1600px",
       },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
         primary: "#d7c3f1",
-        secondary: '#bb91f2',
+        secondary: "#bb91f2",
         warning: "#f5f1d5",
         body: "#59495d",
-        textPrimary: '#312833',
+        textPrimary: "#312833",
       },
       textColor: {
         primary: "#312833",
