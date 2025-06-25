@@ -13,7 +13,7 @@ export const Experience = () => {
   return (
     <section
       id={"experience"}
-      className="flex flex-col gap-8 items-center w-[92rem] md:w-[58rem] sm:w-[20rem]"
+      className="flex flex-col gap-8 items-center sm:w-full md:w-[40rem] lg:w-[58rem] xl:w-[64rem] 2xl:w-[80rem]"
     >
       <SectionHeader text={"Experience"}></SectionHeader>
       <VerticalTimeline lineColor="">

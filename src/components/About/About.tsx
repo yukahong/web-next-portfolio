@@ -4,7 +4,7 @@ export const About = () => {
   return (
     <section id={"about"} className="w-full flex flex-col items-center gap-8">
       <SectionHeader text={"About Me"}></SectionHeader>
-      <div className="flex flex-col gap-4 text-body text-base w-[92rem] md:w-[58rem] sm:w-[20rem]">
+      <div className="flex flex-col gap-4 text-body text-base sm:w-full md:w-[40rem] lg:w-[58rem] xl:w-[64rem] 2xl:w-[80rem]">
         <span>
           起初接觸程式語言是從大學開始，透過課程學習了各種不同的程式語言，也激發了我對於開發的興趣，在校期間也修習了
           UIUX
