@@ -14,7 +14,7 @@ export const Header = () => {
       >
         <nav className="w-full h-full p-2">
           <ul className="flex w-full h-full justify-evenly items-center text-gray-500">
-            {links.map((link, idx) => {
+            {links.map((link) => {
               return (
                 <li className="hover:text-gray-900" key={link.hash}>
                   <a href={link.hash}>{link.name}</a>
