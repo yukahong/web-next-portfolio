@@ -7,6 +7,8 @@ import { LuLinkedin } from "react-icons/lu";
 import { LuGithub } from "react-icons/lu";
 import React from "react";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export const Introduction = () => {
   return (
     <section
@@ -15,7 +17,7 @@ export const Introduction = () => {
     >
       <motion.div>
         <Image
-          src="/profile.jpg"
+          src={`${basePath}/profile.jpg`}
           width={200}
           height={200}
           quality={95}

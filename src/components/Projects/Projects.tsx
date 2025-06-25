@@ -11,6 +11,8 @@ type ProjectProps = {
   imageUrl?: string | null;
 };
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 const Project = (props: ProjectProps) => {
   const { title, description, tags, imageUrl, company } = props;
   return (
@@ -25,7 +27,7 @@ const Project = (props: ProjectProps) => {
         </div>
       </div>
       <Image
-        src={imageUrl || "/"}
+        src={`${basePath}${imageUrl}` || `${basePath}/`}
         width={200}
         height={200}
         quality={95}
