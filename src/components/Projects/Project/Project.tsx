@@ -26,7 +26,6 @@ export const Project = (props: ProjectProps) => {
 
   const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
   const scaleProgress = useTransform(scrollYProgress, [0, 1], [0.7, 1]);
-
   return (
     <motion.section
       ref={projectRef}
@@ -48,13 +47,13 @@ export const Project = (props: ProjectProps) => {
         md:max-w-[50%]
         `}
       >
-        <a
-          target="_blank"
-          href={url || ""}
-          className={`${url} && cursor-pointer`}
-        >
+        {url ? (
+          <a target="_blank" href={url} className={"cursor-pointer"}>
+            <h3 className="text-2xl text-primary font-medium">{title}</h3>
+          </a>
+        ) : (
           <h3 className="text-2xl text-primary font-medium">{title}</h3>
-        </a>
+        )}
         <span className="text-base text-body">{description}</span>
         <div className="flex flex-wrap gap-2 justify-self-end">
           {tags.map((tag, index) => (

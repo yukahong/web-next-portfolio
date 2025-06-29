@@ -13,7 +13,7 @@ export const Experience = () => {
   return (
     <section
       id={"experience"}
-      className="flex flex-col gap-8 items-center scroll-mt-[10rem] sm:w-full md:w-[40rem] lg:w-[58rem] xl:w-[64rem] 2xl:w-[80rem]"
+      className="flex flex-col gap-8 items-center sm:w-full md:w-[40rem] lg:w-[58rem] xl:w-[64rem] 2xl:w-[80rem]"
     >
       <SectionHeader text={"Experience"}></SectionHeader>
       <VerticalTimeline lineColor="">
@@ -44,6 +44,8 @@ export const Experience = () => {
                 {experience.title}
               </h3>
               <h4 className="text-lg text-primary">{experience.location}</h4>
+              {/* <span className="text-sm text-gray-500">{experience.date}</span> */}
+              <p className="text-base text-body">{experience.description}</p>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
