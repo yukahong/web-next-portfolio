@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Noto_Sans_TC } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
+import Footer from "@/components/Footer/Footer";
 
 const notoSansTC = Noto_Sans_TC({
   weight: "400",
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="!scroll-smooth">
       <body
         className={`${notoSansTC.className} antialiased 
          w-full py-28 sm:py-36 text-primary bg-gray-50 sm:text-xs md:text-base
@@ -30,6 +31,7 @@ export default function RootLayout({
         <div className="absolute -z-10 top-[-2rem] left-[-36rem] w-[30rem] h-[30rem] bg-primary rounded-full blur-[10rem] sm:w-[12rem] sm:left-[1rem] md:w-[20rem] md:left-[-3rem] lg:w-[50rem] lg:left-[-5rem] xl:left-[-5rem] 2xl:left-[10rem]"></div>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );
