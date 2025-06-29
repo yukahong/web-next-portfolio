@@ -6,7 +6,7 @@ export const Skills = () => {
   return (
     <section
       id={"skills"}
-      className="flex flex-col gap-8 items-center sm:w-full md:w-[40rem] lg:w-[58rem] xl:w-[64rem] "
+      className="flex flex-col gap-8 items-center scroll-mt-[10rem] sm:w-full md:w-[25rem] lg:w-[35rem] xl:w-[45rem] "
     >
       <SectionHeader text={"Skills"}></SectionHeader>
       <div className="flex flex-wrap gap-3 justify-center">

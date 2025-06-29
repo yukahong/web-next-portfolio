@@ -25,10 +25,10 @@ export const links = [
     name: "Experience",
     hash: "#experience",
   },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
+  // {
+  //   name: "Contact",
+  //   hash: "#contact",
+  // },
 ] as const;
 
 export const experiencesData = [
@@ -76,6 +76,7 @@ export const projectsData = [
     ],
     imageUrl: "/cashubImg.png",
     company: "Castles",
+    url: null,
   },
   {
     title: "Trendee",
@@ -94,6 +95,7 @@ export const projectsData = [
     ],
     imageUrl: "/trendeeImg.png",
     company: "TVBS",
+    url: "https://trendee.com.tw/",
   },
   {
     title: "健康2.0 AI-bot 網頁版",
@@ -102,6 +104,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "JavaScript", "AWS S3", "Tailwind"],
     imageUrl: "/tvbs_health_ai_bot.jpg",
     company: "TVBS",
+    url: null,
   },
   {
     title: "大運動+ App 推播系統",
@@ -110,6 +113,7 @@ export const projectsData = [
     tags: ["React", "Next.js", "TypeScript", "Shadcn", "Tailwind", "NextAuth"],
     imageUrl: "/tvbs_sport_app.jpg",
     company: "TVBS",
+    url: null,
   },
   {
     title: "大運動+ App 棒球12強問答小遊戲活動",
@@ -117,8 +121,8 @@ export const projectsData = [
       "在短短一周內，建立以台灣棒球知識為主題之互動式問答小遊戲活動頁面，並於世界12強賽事前上線，並於賽事期間提供用戶遊玩體驗、收集專屬球員圖卡。",
     tags: ["React", "Next.js", "JavaScript", "Tailwind", "AWS S3"],
     imageUrl: "/tvbs_sport.jpg",
-
     company: "TVBS",
+    url: null,
   },
   // {
   //   title: "Persona AI 客群探索系統",

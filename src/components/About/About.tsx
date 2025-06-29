@@ -1,8 +1,17 @@
+"use client";
+
 import SectionHeader from "@/components/SectionHeader/SectionHeader";
+import { motion } from "motion/react";
 
 export const About = () => {
   return (
-    <section id={"about"} className="w-full flex flex-col items-center gap-8">
+    <motion.section
+      id={"about"}
+      className="w-full flex flex-col items-center gap-8 scroll-mt-[10rem]"
+      initial={{ opacity: 0, y: 100 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ type: "tween", delay: 0.1 }}
+    >
       <SectionHeader text={"About Me"}></SectionHeader>
       <div className="flex flex-col gap-4 text-body text-base sm:w-full md:w-[40rem] lg:w-[58rem] xl:w-[64rem] 2xl:w-[80rem]">
         <span>
@@ -19,7 +28,7 @@ export const About = () => {
           工作以外的閒暇之餘，除了睡眠、休息以外，近期的興趣是製作羊毛氈、緞帶花等手工藝，享受耐心及細心的作業時光。
         </span>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
