@@ -51,7 +51,7 @@ export const experiencesData = [
     title: "Front-End Developer",
     location: "TVBS 聯利媒體股份有限公司",
     description:
-      "前期駐點於關係企業 HTC 技術轉移兼協作，後期由 TVBS 電商團隊接回，開發前後端分離之初始版 Magento 電商網站。",
+      "前期駐點於關係企業 HTC 技術轉移兼協作，後期由 TVBS 電商團隊接回，建置前後端分離之 Magento 電商網站，負責開發全客製 Trendee圈圈選物 電商介面與串接使用者互動功能及流程。",
     icon: React.createElement(CgWorkAlt),
     date: "2020.10 - 2025.03",
   },
@@ -140,6 +140,8 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Redux",
+  "Redux Toolkit",
   "Material UI",
   "Next.js",
   "NextAuth",
