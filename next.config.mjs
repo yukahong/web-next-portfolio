@@ -6,7 +6,7 @@ const basePath = isProduction ? "/web-next-portfolio" : "";
 const nextConfig = {
   basePath: basePath,
   output: "export",
-  distDir: "dist",
+  distDir: ".dist",
   images: {
     unoptimized: true,
   },
